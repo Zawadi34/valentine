@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cute whatevers </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+
+    <h1>Confession?</h1>
+    <p>
+        you are the best thing that ever happened to me.<br>
+        You feel like home.<br>
+        And yes I am definitely in love.
+    </p>
+
+    <a href="deep.html">
+        <button style="
+            padding:12px 25px;
+            border:none;
+            border-radius:25px;
+            background:#ff4d6d;
+            color:white;
+            font-size:16px;
+            cursor:pointer;">
+            Go deeper
+        </button>
+    </a>
+<button onclick="revealMagic()">Tap gently </button>
+
+<div id="magicBox" style="
+    display:none;
+    margin-top:30px;
+    padding:25px;
+    max-width:400px;
+    background:#fff0f3;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    font-style:italic;
+    animation: fadeIn 1.2s ease;
+">
+    I did not plan on falling for you.<br><br>
+    But you happened<br>
+    and now you are my favorite thought.
+</div>
+
+<style>
+@keyframes fadeIn {
+    from { opacity:0; transform:translateY(10px); }
+    to { opacity:1; transform:translateY(0); }
+}
+</style>
+
+<script>
+function revealMagic() {
+    document.getElementById("magicBox").style.display = "block";
+}
+</script>
+
+
+</body>
+</html>
